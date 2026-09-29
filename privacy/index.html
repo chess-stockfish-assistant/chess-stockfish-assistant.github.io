@@ -72,14 +72,13 @@
     <p>Reports are used only to fix board reading. They are not sold or shared with third parties, and are deleted after 14 days. At most five automatic reports are sent per day.</p>
 
     <h2>Accessibility Service</h2>
-    <p>This app uses Android's Accessibility Service to read chess piece positions from the Chess.com and Lichess apps. Specifically:</p>
-    <ul>
-        <li>The service reads the <strong>accessibility node tree</strong> of supported chess apps to detect piece positions on the board.</li>
-        <li>This data is processed <strong>entirely on your device</strong> to construct a board position for analysis.</li>
-        <li>The accessibility service <strong>does not</strong> read, collect, or access any other app content, passwords, messages, or personal information.</li>
-        <li>No content obtained through the accessibility service is transmitted off your device, except in the optional board-reading reports described above, which you must agree to first. The usage statistics only record whether a board was detected.</li>
-        <li>When the assistant is started during a Lichess game, the service may scroll the Lichess move list back to read the earlier moves, and then scrolls it forward again. It does not otherwise interact with the chess app.</li>
-    </ul>
+    <p>Chess Assistant uses Android's Accessibility Service only when the user explicitly enables the automatic board-reading feature.</p>
+    <p>The Accessibility Service is used to identify and reconstruct chess positions displayed in supported chess applications, including Chess.com and Lichess. To perform this function, the service may read accessibility elements related to the chess game, such as piece positions, board squares, moves, move numbers, clocks, and information necessary to determine the current position and side to move.</p>
+    <p>This information is processed locally on the user's device to provide chess study and analysis features using the Stockfish engine.</p>
+    <p>The Accessibility Service is not used to read passwords, private messages, conversations, contacts, payment information, or unrelated content from other applications.</p>
+    <p>Information obtained through the Accessibility Service is not transmitted to our servers except when the user has separately opted in to the optional Board-Reading Reports described in this Privacy Policy.</p>
+    <p>When enabled, Board-Reading Reports may contain limited chess-game information required to diagnose board-reading problems. These reports are used only for troubleshooting board-reading functionality and are automatically deleted after 14 days.</p>
+    <p>Users can disable the Accessibility Service at any time through Android settings. Disabling it prevents automatic board reading but does not prevent access to other features that do not require the service.</p>
 
     <h2>In-App Purchases</h2>
     <p>Premium features are available via Google Play In-App Purchases. All payment processing is handled entirely by Google Play. We do not have access to your payment information.</p>
