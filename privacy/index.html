@@ -15,11 +15,12 @@
 </head>
 <body>
     <h1>Chess Assistant — Privacy Policy</h1>
-    <p><strong>Last updated: October 6, 2026</strong></p>
+    <p><strong>Last updated: October 28, 2026</strong></p>
     <h2>Overview</h2>
     <p>Chess Assistant is a chess and checkers study and analysis tool designed to help players learn, improve their skills, and better understand game positions.</p>
     <p>Chess analysis is performed locally on the user's device using the open-source Stockfish chess engine.</p>
     <p>Checkers analysis, including analysis for the Lukok checkers app, is also performed locally on the user's device.</p>
+    <p>Analysis is performed on the device. Chess Assistant transmits only the limited information described in this policy, such as free-tier usage information, usage and diagnostic statistics, Board-Reading Reports, board images when you have agreed to them, and purchase verification information when you buy or restore Premium.</p>
     <p>This Privacy Policy explains what information Chess Assistant accesses, collects, processes, and stores, how that information is used, and the choices available to users.</p>
     <hr>
     <h2>Purpose</h2>
@@ -31,7 +32,7 @@
         <li>Improve their understanding of chess and checkers positions and strategies</li>
     </ul>
     <p>Users are responsible for using Chess Assistant in accordance with the rules and terms of service of the game platforms they use.</p>
-    <p>Chess Assistant is not affiliated with, sponsored by, or endorsed by Chess.com, Lichess, or Lukok.</p>
+    <p>Chess Assistant is not affiliated with, sponsored by, or endorsed by Chess.com, Lichess, Lukok, or any other game app it supports.</p>
     <hr>
     <h2>Data Collection</h2>
     <p>We collect as little information as necessary to operate, protect, and improve Chess Assistant.</p>
@@ -40,12 +41,14 @@
         <li>Free-tier usage information</li>
         <li>Usage and diagnostic statistics</li>
         <li>Board-Reading Reports, only after you have agreed to them</li>
+        <li>Board images, only after you have agreed to the current Accessibility disclosure and while the <strong>Send board images</strong> option is on</li>
+        <li>Purchase verification information, including the Google Play purchase token, when you buy or restore Premium</li>
     </ul>
     <p>This information uses a pseudonymous device identifier as described below.</p>
     <p>Chess Assistant does not require account registration.</p>
     <p>Your chosen username is stored locally on your device and is not transmitted to our servers.</p>
     <p>Chess analysis using Stockfish and checkers analysis are performed locally on your device.</p>
-    <p>Chess and checkers positions, moves, and game information are not normally transmitted to our servers. Limited game information may be transmitted only through the Board-Reading Reports described below.</p>
+    <p>Chess and checkers positions, moves, and game information are not normally transmitted to our servers. Limited game information may be transmitted only through the Board-Reading Reports and board images described below. A board image can show the position and anything drawn over the board area.</p>
     <p>We do not collect advertising data and do not use your information to track you across other apps or websites.</p>
     <hr>
     <h2>Free-Tier Usage Counter</h2>
@@ -70,12 +73,15 @@
     <p>After that period, the server may retain only the one-way device hash together with:</p>
     <ul>
         <li>The date the identifier was first seen</li>
+        <li>The date the app last reported activity</li>
         <li>The date a free trial ended, when applicable</li>
+        <li>The trial length and trial variant assigned, when applicable</li>
     </ul>
     <p>This limited record is used to prevent reinstalling the app from repeatedly starting new free trials.</p>
     <p>It is automatically deleted 400 days after the app last reports activity.</p>
+    <p>Daily backup copies of the free-tier counter file are kept for up to 7 days, then deleted.</p>
     <p>For abuse prevention, the server may temporarily process your IP address in memory for up to one hour.</p>
-    <p>The IP address is not stored together with usage-counter records, usage statistics, or Board-Reading Reports.</p>
+    <p>The IP address is not stored together with usage-counter records, usage statistics, Board-Reading Reports, or board images.</p>
     <p>Premium subscribers do not send the free-tier usage-counter information described in this section.</p>
     <hr>
     <h2>Usage and Diagnostic Statistics</h2>
@@ -86,7 +92,7 @@
         <li>Accessibility, overlay, and notification permission prompts, the user's response to those prompts, and whether these permissions remain active</li>
         <li>Premium offers, discounts, and free-trial screens displayed by the app, and the user's response</li>
         <li>The number of analyses used during a trial</li>
-        <li>Premium upgrade and purchase attempts</li>
+        <li>Premium plan selection, upgrade and purchase attempts, and purchase results, including the selected plan and, when available, the price and currency</li>
         <li>Display of the Google Play rating request</li>
         <li>Notifications shown by the app, such as reminders or news about features</li>
         <li>Whether you accepted or declined Board-Reading Reports</li>
@@ -124,11 +130,11 @@
     <hr>
     <h2>Board-Reading Reports</h2>
     <p>Chess Assistant includes a diagnostic reporting feature designed to help identify and fix problems with automatic chess and checkers board reading.</p>
-    <p><strong>Board-Reading Reports are sent only after you agree to them in the disclosure Chess Assistant shows before you turn on its Accessibility Service.</strong></p>
-    <p>If you turned on the Accessibility Service before that disclosure included information about Board-Reading Reports, Chess Assistant will show the disclosure to you again.</p>
-    <p>If you choose <strong>Not now</strong>, Board-Reading Reports are not sent.</p>
+    <p><strong>Board-Reading Reports are sent only after you agree to them in the current disclosure (version 3) that Chess Assistant shows before you turn on its Accessibility Service.</strong></p>
+    <p>Because the current disclosure also covers board images, Chess Assistant shows it again to users who answered an earlier version.</p>
+    <p>If you choose <strong>Not now</strong>, Board-Reading Reports are not sent and no board image is sent.</p>
     <p>Board-Reading Reports stop when you disable Chess Assistant's Accessibility Service.</p>
-    <p>If you want to withdraw your agreement while keeping other app data unchanged, you may contact us using the email address provided in the Contact section below regarding previously submitted reports.</p>
+    <p>If you want to withdraw your agreement while keeping other app data unchanged, you may contact us using the email address provided in the Contact section below regarding previously submitted reports or board images.</p>
     <p>You may also clear Chess Assistant's app data through Android settings and choose <strong>Not now</strong> when the disclosure is shown again.</p>
     <p>A report may be generated when:</p>
     <ul>
@@ -172,14 +178,21 @@
     <p>Board-Reading Reports are used only to diagnose and improve board-reading functionality.</p>
     <p>They are not sold or used for advertising.</p>
     <p>Reports are automatically deleted after 14 days.</p>
-    <p>Chess Assistant sends no more than five automatically generated Board-Reading Reports per day.</p>
+    <p>Chess Assistant sends no more than five automatically generated Board-Reading Reports per day per installation. The server accepts no more than ten Board-Reading Reports per device per day.</p>
+    <hr>
+    <h2>Board Images</h2>
+    <p>Chess Assistant can also send a small image of the board when board reading fails, to help fix the reader. This option is on by default, but an image is sent only after you have agreed to the current Accessibility disclosure (version 3) and while <strong>Send board images</strong> is on in the app's settings. If you chose <strong>Not now</strong> in that disclosure, no image is sent. You can turn the option off at any time in the app's settings; when it is off, no image is sent.</p>
+    <p>Only the board area is cropped, with a margin of 0.35 of a board square around it; the rest of the screen is not sent. The crop shows the board position and is geometric: anything drawn over the board area, such as highlights, arrows, overlays, or text, can appear in the image. Player names, ratings, chat, and interface text outside the crop are not included by design, but text or overlays inside the board area may be visible.</p>
+    <p>Images are sent only for supported chess or checkers apps whose board is read from a screenshot, when a read fails or you manually report a problem, at most three images per day per installation and one per reason per session. The server accepts at most five images per device per day.</p>
+    <p>Images are encoded as JPEG, with the longest side reduced to at most 800 pixels and the file limited to 512 KB. They are used only to diagnose and improve board-reading. They are not sold or used for advertising. They are automatically deleted after 30 days.</p>
     <hr>
     <h2>Accessibility Service</h2>
     <p>Chess Assistant uses Android's Accessibility Service only when the user explicitly enables the automatic board-reading feature.</p>
-    <p>The Accessibility Service allows Chess Assistant to identify and reconstruct chess and checkers positions displayed in supported applications:</p>
+    <p>The Accessibility Service allows Chess Assistant to identify and reconstruct chess and checkers positions displayed in supported applications. The full, current list is shown in the app:</p>
     <ul>
-        <li>Chess.com and Lichess for chess</li>
-        <li>Lukok (<code>pl.lukok.draughts</code>) for checkers</li>
+        <li>Chess read through the Accessibility Service: Chess.com, Lichess, and Chess for All (Miroslav Kisly) when TalkBack and its Blind mode expose the squares</li>
+        <li>Chess read from screenshots on Android 11 or later: Chess Prince, GamoVation, and AI Factory; Chess for All when its squares are not exposed</li>
+        <li>Checkers: Lukok (<code>pl.lukok.draughts</code>), OWS Checkers, Quick Checkers, Elvista Checkers, and Dimcoms Checkers</li>
     </ul>
     <p>To provide this functionality, the Accessibility Service may read accessibility elements related to the game, including:</p>
     <ul>
@@ -202,8 +215,8 @@
         <li>Content from unrelated applications</li>
     </ul>
     <p>Information obtained through the Accessibility Service is not normally transmitted to our servers.</p>
-    <p>The only exception is the Board-Reading Reports described above, which are sent only after the user agrees to them in the Accessibility disclosure.</p>
-    <p>When the user has agreed to Board-Reading Reports, limited game and interface information necessary to diagnose board-reading problems may be transmitted as described in the “Board-Reading Reports” section.</p>
+    <p>The only exceptions are the Board-Reading Reports and board images described above, which are sent only after the user agrees to the current Accessibility disclosure.</p>
+    <p>When the user has agreed to Board-Reading Reports, limited game and interface information necessary to diagnose board-reading problems may be transmitted as described in the “Board-Reading Reports” section. When the board-image option is on, a small image of the board may be transmitted as described in the “Board Images” section.</p>
     <p>When reading a game displayed by Lichess, Chess Assistant may temporarily scroll the visible move list in order to read earlier chess moves and then return the move list to its previous or latest position.</p>
     <p>This interaction is performed only as part of automatic board reconstruction.</p>
     <p>Users can disable the Accessibility Service at any time through Android settings.</p>
@@ -212,8 +225,8 @@
     <hr>
     <h2>In-App Purchases</h2>
     <p>Premium features are available through Google Play In-App Purchases.</p>
-    <p>Payment processing is handled by Google Play.</p>
-    <p>Chess Assistant and its developer do not receive or store your payment-card or other payment information.</p>
+    <p>Payment processing is handled by Google Play. Chess Assistant and its developer do not receive or store your payment-card details.</p>
+    <p>To verify a purchase or subscription, the app sends the purchase token, the product identifier, the purchase type, the app version, and the pseudonymous device identifier to the developer's server over HTTPS. The server checks them with the Google Play Developer API. It stores only the result of that check (whether the purchase is active, the reason, the product, and when it was checked), never the raw token. Google's answer is cached for up to three hours, keyed by a hash of the purchase token; on the server, the token itself is not written to logs or storage.</p>
     <p>Google Play may provide the app with information necessary to determine purchase and subscription status.</p>
     <hr>
     <h2>Data Stored on Your Device</h2>
@@ -225,10 +238,10 @@
         <li>Analysis depth</li>
         <li>Selected play styles</li>
         <li>Feature preferences</li>
-        <li>Premium subscription status</li>
+        <li>Premium subscription status and the Google Play purchase token, kept locally to verify and restore Premium</li>
         <li>Free-tier usage information</li>
     </ul>
-    <p>Except for information specifically described in the Free-Tier Usage Counter, Usage and Diagnostic Statistics, and Board-Reading Reports sections, this locally stored information is not transmitted to our servers.</p>
+    <p>Except for information specifically described in the Free-Tier Usage Counter, Usage and Diagnostic Statistics, Board-Reading Reports, Board Images, and In-App Purchases sections, this locally stored information is not transmitted to our servers.</p>
     <p>Local app information is removed according to Android's app-data and uninstall behavior when the application is uninstalled or its data is cleared.</p>
     <hr>
     <h2>Data Security</h2>
@@ -249,9 +262,11 @@
     <ul>
         <li>Usage and diagnostic statistics</li>
         <li>Board-Reading Reports</li>
+        <li>Board images</li>
         <li>Free-tier usage-counter records</li>
+        <li>Purchase-verification and entitlement records</li>
     </ul>
-    <p>The limited record described in the Retention section (the one-way device hash, the date it was first seen, and the date a free trial ended) may be kept for up to 400 days after the app last reports activity, to prevent repeated free trials.</p>
+    <p>The limited record described in the Retention section (the one-way device hash, the first-seen and last-seen dates, and the trial end, length, and variant when applicable) may be kept for up to 400 days after the app last reports activity, to prevent repeated free trials.</p>
     <p>Without a request, data is deleted automatically after the periods described in this Privacy Policy.</p>
     <hr>
     <h2>Third-Party Services</h2>
@@ -259,10 +274,11 @@
     <h3>Google Play Billing</h3>
     <p>Used to process Premium purchases and subscriptions.</p>
     <p>Payment processing is handled by Google under Google's applicable terms and privacy practices.</p>
+    <p>The Google Play Developer API is used by the developer's server to confirm a purchase from its purchase token, as described in the In-App Purchases section.</p>
     <h3>Google Play Integrity API</h3>
     <p>Used by the free version to help verify the integrity and installation environment of the app and to prevent abuse of free usage and trial features.</p>
     <p>Integrity processing performed by Google is subject to Google's applicable privacy practices.</p>
-    <p>The server used for Chess Assistant's free-tier counters, usage statistics, and Board-Reading Reports is operated by the developer and is not considered a separate third-party analytics or advertising service.</p>
+    <p>The server used for Chess Assistant's free-tier counters, usage statistics, Board-Reading Reports, board images, and purchase verification is operated by the developer and is not considered a separate third-party analytics or advertising service.</p>
     <p>Chess Assistant does not use third-party advertising services for the data processing described in this Privacy Policy.</p>
     <hr>
     <h2>Children's Privacy</h2>
@@ -274,7 +290,8 @@
     <p>Depending on the feature, users can:</p>
     <ul>
         <li>Choose whether to enable Android's Accessibility Service for automatic board reading</li>
-        <li>Agree to Board-Reading Reports or choose <strong>Not now</strong> in the Accessibility disclosure</li>
+        <li>Agree to Board-Reading Reports or choose <strong>Not now</strong> in the Accessibility disclosure, which also covers board images</li>
+        <li>Turn board images on or off at any time with <strong>Send board images</strong> in the app's settings</li>
         <li>Stop Board-Reading Reports by disabling the Accessibility Service</li>
         <li>Clear the app's data and choose <strong>Not now</strong> when the disclosure is shown again</li>
         <li>Disable the Accessibility Service through Android settings</li>
